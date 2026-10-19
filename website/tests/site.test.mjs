@@ -22,6 +22,7 @@ test("ships the complete Cercloud landing page", async () => {
     "Identity + access",
     "Data + infrastructure",
     "Cercloud Enterprise",
+    "Beta coming soon",
   ]) {
     assert.match(html, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
