@@ -6,6 +6,10 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 function syncTheme(theme) {
   const night = theme === "night";
   root.dataset.theme = theme;
+  document.querySelectorAll("[data-day-src][data-night-src]").forEach((image) => {
+    const nextSource = night ? image.dataset.nightSrc : image.dataset.daySrc;
+    if (image.getAttribute("src") !== nextSource) image.setAttribute("src", nextSource);
+  });
   themeName.textContent = night ? "Night" : "Day";
   toggle.setAttribute("aria-pressed", String(night));
   toggle.setAttribute("aria-label", `Switch to ${night ? "daylight" : "night"} theme`);

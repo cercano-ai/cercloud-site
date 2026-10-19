@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Cercloud identity, audit, and cost visibility</title>
+  <desc id="desc">Identity, request context, and model route data flow through separate ports into an immutable audit ledger, producing showback, security, and compliance views.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#3b3020" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#7a4e0a"/></marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1763a0"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1e7a3c"/></marker>
+    <style>
+      .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+      .label { fill: #72654e; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
+      .title { fill: #3b3020; font-size: 24px; font-weight: 600; letter-spacing: .4px; }
+      .small { fill: #72654e; font-size: 16px; font-weight: 500; }
+      .micro { fill: #72654e; font-size: 13px; font-weight: 500; letter-spacing: .5px; }
+      .event-title { fill: #3b3020; font-size: 18px; font-weight: 600; }
+      .event-small { fill: #72654e; font-size: 14px; font-weight: 500; }
+      .node { fill: #f1e6cc; stroke: #9b8d72; stroke-width: 2; }
+      .rule { stroke: #c9b995; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="#fbf3e0"/>
+  <rect x="36" y="36" width="1464" height="952" fill="url(#grid)" stroke="#a99a7c" stroke-width="2"/>
+  <text x="82" y="92" class="mono label">ATTRIBUTION</text>
+  <text x="636" y="92" class="mono label">IMMUTABLE LEDGER</text>
+  <text x="1234" y="92" class="mono label">ACTIONABLE VIEWS</text>
+
+  <g transform="translate(82 168)">
+    <rect class="node" width="350" height="178" rx="5"/>
+    <path class="rule" d="M0 42H350"/>
+    <circle cx="22" cy="21" r="5" fill="#7a4e0a"/>
+    <text x="42" y="28" class="mono label" fill="#7a4e0a">IDENTITY</text>
+    <text x="28" y="82" class="mono title">PERSON + TEAM</text>
+    <text x="28" y="113" class="mono small">trusted sign-in · role · org</text>
+    <g transform="translate(28 137)">
+      <rect width="88" height="22" rx="2" fill="#fbf3e0" stroke="#9b8d72"/>
+      <rect x="98" width="88" height="22" rx="2" fill="#fbf3e0" stroke="#9b8d72"/>
+      <rect x="196" width="98" height="22" rx="2" fill="#fbf3e0" stroke="#9b8d72"/>
+      <text x="44" y="16" text-anchor="middle" class="mono micro">USER</text>
+      <text x="142" y="16" text-anchor="middle" class="mono micro">TEAM</text>
+      <text x="245" y="16" text-anchor="middle" class="mono micro">COST CTR</text>
+    </g>
+    <circle cx="350" cy="89" r="7" fill="#7a4e0a"/>
+  </g>
+
+  <g transform="translate(82 424)">
+    <rect class="node" width="350" height="178" rx="5"/>
+    <path class="rule" d="M0 42H350"/>
+    <circle cx="22" cy="21" r="5" fill="#1763a0"/>
+    <text x="42" y="28" class="mono label" fill="#1763a0">REQUEST CONTEXT</text>
+    <text x="28" y="82" class="mono title">TASK + DEVICE</text>
+    <text x="28" y="108" class="mono small">host · use case</text>
+    <text x="28" y="132" class="mono small">policy revision</text>
+    <path d="M29 154H108M128 154H207M227 154H306" stroke="#1763a0" stroke-width="3"/>
+    <circle cx="29" cy="154" r="5" fill="#fbf3e0" stroke="#1763a0" stroke-width="3"/>
+    <circle cx="128" cy="154" r="5" fill="#fbf3e0" stroke="#1763a0" stroke-width="3"/>
+    <circle cx="227" cy="154" r="5" fill="#fbf3e0" stroke="#1763a0" stroke-width="3"/>
+    <circle cx="350" cy="89" r="7" fill="#1763a0"/>
+  </g>
+
+  <g transform="translate(82 680)">
+    <rect class="node" width="350" height="178" rx="5"/>
+    <path class="rule" d="M0 42H350"/>
+    <circle cx="22" cy="21" r="5" fill="#1e7a3c"/>
+    <text x="42" y="28" class="mono label" fill="#1e7a3c">MODEL ROUTE</text>
+    <text x="28" y="82" class="mono title">MODEL + PROVIDER</text>
+    <text x="28" y="108" class="mono small">destination · tokens</text>
+    <text x="28" y="132" class="mono small">latency · cost</text>
+    <g transform="translate(28 151)">
+      <rect width="294" height="12" rx="2" fill="#fbf3e0"/>
+      <rect width="212" height="12" rx="2" fill="#1e7a3c"/>
+      <path d="M235 0V12M264 0V12" stroke="#9b8d72" stroke-width="2"/>
+    </g>
+    <circle cx="350" cy="89" r="7" fill="#1e7a3c"/>
+  </g>
+
+  <path d="M432 257H516Q546 257 546 287V355Q546 385 576 385H608" fill="none" stroke="#7a4e0a" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M432 513H608" fill="none" stroke="#1763a0" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M432 769H516Q546 769 546 739V671Q546 641 576 641H608" fill="none" stroke="#1e7a3c" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <g opacity=".08" filter="url(#soft-glow)"><rect x="604" y="168" width="360" height="690" rx="16" fill="#7a4e0a"/></g>
+  <g transform="translate(608 150)">
+    <rect width="352" height="726" rx="8" fill="#e8d9b8" stroke="#7a4e0a" stroke-width="3"/>
+    <rect x="22" y="22" width="308" height="682" rx="4" fill="#f1e6cc" stroke="#a99a7c" stroke-width="2"/>
+    <text x="176" y="66" text-anchor="middle" class="mono label" fill="#7a4e0a">AUDIT LEDGER</text>
+    <text x="176" y="101" text-anchor="middle" class="mono title">TAMPER EVIDENT</text>
+    <path d="M49 132H303" class="rule"/>
+
+    <path d="M65 174V608" stroke="#9b8d72" stroke-width="3"/>
+    <g transform="translate(65 192)">
+      <circle r="8" fill="#7a4e0a"/>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#fbf3e0" stroke="#9b8d72"/>
+      <text x="32" y="-2" class="mono micro" fill="#7a4e0a">EVENT 0042 · REQUEST</text>
+      <text x="32" y="23" class="mono event-title">identity attached</text>
+      <text x="32" y="45" class="mono event-small">member · team · host</text>
+    </g>
+    <g transform="translate(65 320)">
+      <circle r="8" fill="#1763a0"/>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#fbf3e0" stroke="#9b8d72"/>
+      <text x="32" y="-2" class="mono micro" fill="#1763a0">EVENT 0043 · POLICY</text>
+      <text x="32" y="23" class="mono event-title">revision verified</text>
+      <text x="32" y="45" class="mono event-small">signed · current · allowed</text>
+    </g>
+    <g transform="translate(65 448)">
+      <circle r="8" fill="#1e7a3c"/>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#fbf3e0" stroke="#9b8d72"/>
+      <text x="32" y="-2" class="mono micro" fill="#1e7a3c">EVENT 0044 · ROUTE</text>
+      <text x="32" y="23" class="mono event-title">model selected</text>
+      <text x="32" y="45" class="mono event-small">provider · task · route</text>
+    </g>
+    <g transform="translate(65 576)">
+      <circle r="8" fill="#3b3020"/>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#fbf3e0" stroke="#9b8d72"/>
+      <text x="32" y="-2" class="mono micro">EVENT 0045 · RESULT</text>
+      <text x="32" y="23" class="mono event-title">usage recorded</text>
+      <text x="32" y="45" class="mono event-small">tokens · latency · cost</text>
+    </g>
+    <text x="50" y="663" class="mono micro">HASH CHAIN VERIFIED</text>
+    <text x="50" y="687" class="mono micro">RETENTION POLICY APPLIED</text>
+    <circle cx="0" cy="235" r="8" fill="#7a4e0a" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="0" cy="363" r="8" fill="#1763a0" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="0" cy="491" r="8" fill="#1e7a3c" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="352" cy="235" r="8" fill="#7a4e0a" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="352" cy="363" r="8" fill="#1763a0" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="352" cy="491" r="8" fill="#1e7a3c" stroke="#fbf3e0" stroke-width="3"/>
+  </g>
+
+  <path d="M960 385H1010Q1040 385 1040 355V287Q1040 257 1070 257H1120" fill="none" stroke="#7a4e0a" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M960 513H1120" fill="none" stroke="#1763a0" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M960 641H1010Q1040 641 1040 671V739Q1040 769 1070 769H1120" fill="none" stroke="#1e7a3c" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <g transform="translate(1120 168)">
+    <rect class="node" width="334" height="178" rx="5"/>
+    <circle cx="0" cy="89" r="7" fill="#7a4e0a"/>
+    <text x="28" y="45" class="mono label" fill="#7a4e0a">SHOWBACK</text>
+    <text x="28" y="79" class="mono title">COST BY TEAM</text>
+    <rect x="28" y="108" width="252" height="10" rx="2" fill="#fbf3e0"/>
+    <rect x="28" y="108" width="188" height="10" rx="2" fill="#7a4e0a"/>
+    <rect x="28" y="132" width="252" height="10" rx="2" fill="#fbf3e0"/>
+    <rect x="28" y="132" width="124" height="10" rx="2" fill="#7a4e0a" opacity=".7"/>
+  </g>
+  <g transform="translate(1120 424)">
+    <rect class="node" width="334" height="178" rx="5"/>
+    <circle cx="0" cy="89" r="7" fill="#1763a0"/>
+    <text x="28" y="45" class="mono label" fill="#1763a0">SECURITY</text>
+    <text x="28" y="79" class="mono title">USER + DEVICE</text>
+    <g transform="translate(28 100)">
+      <rect width="278" height="62" rx="3" fill="#fbf3e0" stroke="#9b8d72"/>
+      <circle cx="22" cy="31" r="6" fill="#1763a0"/>
+      <text x="42" y="27" class="mono small">ATTRIBUTED · ACTIVE</text>
+      <text x="42" y="49" class="mono small">VERIFIED</text>
+    </g>
+  </g>
+  <g transform="translate(1120 680)">
+    <rect class="node" width="334" height="178" rx="5"/>
+    <circle cx="0" cy="89" r="7" fill="#1e7a3c"/>
+    <text x="28" y="45" class="mono label" fill="#1e7a3c">COMPLIANCE</text>
+    <text x="28" y="79" class="mono title">POLICY PROOF</text>
+    <path d="M31 115L43 127L67 101" fill="none" stroke="#1e7a3c" stroke-width="5"/>
+    <text x="82" y="119" class="mono micro">REVISION + ROUTE + PROVENANCE</text>
+    <text x="82" y="143" class="mono small" font-size="14">export-ready evidence</text>
+  </g>
+
+  <text x="82" y="930" class="mono small">WHO · DEVICE · TASK · POLICY · ROUTE · COST</text>
+  <text x="1454" y="930" text-anchor="end" class="mono small">ONE AUDITABLE RECORD</text>
+</svg>

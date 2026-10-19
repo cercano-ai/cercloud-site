@@ -42,7 +42,9 @@ test("includes the illustration and console screenshot sets", async () => {
   }
   await access(new URL("assets/favicon.svg", root));
   await access(new URL("assets/control-plane-v2.svg", root));
+  await access(new URL("assets/control-plane-day.svg", root));
   await access(new URL("assets/audit-visibility-v2.svg", root));
+  await access(new URL("assets/audit-visibility-day.svg", root));
 
   for (const file of [
     "model-policy-960.webp",
@@ -65,4 +67,6 @@ test("preserves the Cercano palette and day-night behavior", async () => {
   }
   assert.match(css, /IBM Plex Mono/);
   assert.match(js, /localStorage\.setItem\("cercloud-theme"/);
+  assert.match(js, /querySelectorAll\("\[data-day-src\]\[data-night-src\]"\)/);
+  assert.match(js, /night \? image\.dataset\.nightSrc : image\.dataset\.daySrc/);
 });
