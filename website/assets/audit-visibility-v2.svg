@@ -130,9 +130,9 @@
     <circle cx="352" cy="491" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
   </g>
 
-  <path d="M960 385H1010Q1040 385 1040 355V257Q1040 227 1070 227H1120" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M960 385H1010Q1040 385 1040 355V287Q1040 257 1070 257H1120" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
   <path d="M960 513H1120" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
-  <path d="M960 641H1010Q1040 641 1040 671V769Q1040 799 1070 799H1120" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <path d="M960 641H1010Q1040 641 1040 671V739Q1040 769 1070 769H1120" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
 
   <g transform="translate(1120 168)">
     <rect class="node" width="334" height="178" rx="5"/>

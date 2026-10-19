@@ -11,7 +11,7 @@ test("builds a GitHub Pages artifact for the Cercloud project site", async () =>
   assert.match(html, /href="styles\.css"/);
   assert.match(html, /src="site\.js"/);
   assert.match(html, /src="assets\/control-plane-v2\.svg\?v=95bba31"/);
-  assert.match(html, /src="assets\/audit-visibility-v2\.svg\?v=bd867a8"/);
+  assert.match(html, /src="assets\/audit-visibility-v2\.svg\?v=3"/);
   assert.doesNotMatch(html, /(?:href|src)="\/[^/"]/);
   await access(new URL(".nojekyll", dist));
 });
