@@ -21,7 +21,6 @@
       .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
       .label { fill: #a6a29b; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
       .title { fill: #f4eee3; font-size: 25px; font-weight: 600; letter-spacing: .5px; }
-      .title-compact { fill: #f4eee3; font-size: 20px; font-weight: 600; letter-spacing: .2px; }
       .small { fill: #767676; font-size: 16px; font-weight: 500; }
       .node { fill: #202121; stroke: #555654; stroke-width: 2; }
       .node-line { stroke: #3d3e3d; stroke-width: 2; }
@@ -66,8 +65,9 @@
     <path d="M29 99H103M40 78H92M40 120H92" stroke="#bdf000" stroke-width="4"/>
     <circle cx="29" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
     <circle cx="103" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
-    <text x="132" y="88" class="mono title-compact">COMPATIBLE APPS</text>
-    <text x="132" y="116" class="mono small">OpenAI-compatible</text>
+    <text x="132" y="78" class="mono title">COMPATIBLE</text>
+    <text x="132" y="106" class="mono title">APPS</text>
+    <text x="132" y="132" class="mono small">OpenAI-compatible</text>
     <circle cx="330" cy="77" r="7" fill="#bdf000"/>
   </g>
 
@@ -115,9 +115,9 @@
     <circle cx="296" cy="369" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
   </g>
 
-  <path d="M916 401H966Q996 401 996 371V251Q996 221 1026 221H1116" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
-  <path d="M916 507H1116" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
-  <path d="M916 613H966Q996 613 996 643V763Q996 793 1026 793H1116" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <path d="M916 401H966Q996 401 996 371V251Q996 221 1026 221H1124" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M916 507H1124" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M916 613H966Q996 613 996 643V763Q996 793 1026 793H1124" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
 
   <!-- infrastructure endpoints are flat technical panels, not toy hardware -->
   <g transform="translate(1124 150)">

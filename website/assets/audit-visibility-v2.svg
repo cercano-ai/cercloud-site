@@ -16,11 +16,9 @@
       .label { fill: #a6a29b; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
       .title { fill: #f4eee3; font-size: 24px; font-weight: 600; letter-spacing: .4px; }
       .small { fill: #767676; font-size: 16px; font-weight: 500; }
-      .small-compact { fill: #767676; font-size: 13px; font-weight: 500; }
       .micro { fill: #a6a29b; font-size: 13px; font-weight: 500; letter-spacing: .5px; }
       .event-title { fill: #f4eee3; font-size: 18px; font-weight: 600; }
-      .event-small { fill: #767676; font-size: 13px; font-weight: 500; }
-      .tag { fill: #a6a29b; font-size: 12px; font-weight: 500; letter-spacing: .25px; }
+      .event-small { fill: #767676; font-size: 14px; font-weight: 500; }
       .node { fill: #202121; stroke: #555654; stroke-width: 2; }
       .rule { stroke: #3d3e3d; stroke-width: 2; }
     </style>
@@ -56,11 +54,12 @@
     <circle cx="22" cy="21" r="5" fill="#00c8e8"/>
     <text x="42" y="28" class="mono label" fill="#00c8e8">REQUEST CONTEXT</text>
     <text x="28" y="82" class="mono title">TASK + DEVICE</text>
-    <text x="28" y="113" class="mono small-compact">host · use case · policy revision</text>
-    <path d="M29 145H108M128 145H207M227 145H306" stroke="#00c8e8" stroke-width="3"/>
-    <circle cx="29" cy="145" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
-    <circle cx="128" cy="145" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
-    <circle cx="227" cy="145" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <text x="28" y="108" class="mono small">host · use case</text>
+    <text x="28" y="132" class="mono small">policy revision</text>
+    <path d="M29 154H108M128 154H207M227 154H306" stroke="#00c8e8" stroke-width="3"/>
+    <circle cx="29" cy="154" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <circle cx="128" cy="154" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <circle cx="227" cy="154" r="5" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
     <circle cx="350" cy="89" r="7" fill="#00c8e8"/>
   </g>
 
@@ -70,8 +69,9 @@
     <circle cx="22" cy="21" r="5" fill="#bdf000"/>
     <text x="42" y="28" class="mono label" fill="#bdf000">MODEL ROUTE</text>
     <text x="28" y="82" class="mono title">MODEL + PROVIDER</text>
-    <text x="28" y="113" class="mono small-compact">destination · tokens · latency · cost</text>
-    <g transform="translate(28 135)">
+    <text x="28" y="108" class="mono small">destination · tokens</text>
+    <text x="28" y="132" class="mono small">latency · cost</text>
+    <g transform="translate(28 151)">
       <rect width="294" height="12" rx="2" fill="#171818"/>
       <rect width="212" height="12" rx="2" fill="#bdf000"/>
       <path d="M235 0V12M264 0V12" stroke="#555654" stroke-width="2"/>
@@ -94,31 +94,31 @@
     <path d="M65 174V608" stroke="#555654" stroke-width="3"/>
     <g transform="translate(65 192)">
       <circle r="8" fill="#ea8212"/>
-      <rect x="28" y="-27" width="230" height="86" rx="3" fill="#171818" stroke="#555654"/>
-      <text x="46" y="-2" class="mono micro" fill="#ea8212">EVENT 0042 · REQUEST</text>
-      <text x="46" y="23" class="mono event-title">identity attached</text>
-      <text x="46" y="45" class="mono event-small">member · team · host</text>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#171818" stroke="#555654"/>
+      <text x="32" y="-2" class="mono micro" fill="#ea8212">EVENT 0042 · REQUEST</text>
+      <text x="32" y="23" class="mono event-title">identity attached</text>
+      <text x="32" y="45" class="mono event-small">member · team · host</text>
     </g>
     <g transform="translate(65 320)">
       <circle r="8" fill="#00c8e8"/>
-      <rect x="28" y="-27" width="230" height="86" rx="3" fill="#171818" stroke="#555654"/>
-      <text x="46" y="-2" class="mono micro" fill="#00c8e8">EVENT 0043 · POLICY</text>
-      <text x="46" y="23" class="mono event-title">revision verified</text>
-      <text x="46" y="45" class="mono event-small">signed · current · allowed</text>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#171818" stroke="#555654"/>
+      <text x="32" y="-2" class="mono micro" fill="#00c8e8">EVENT 0043 · POLICY</text>
+      <text x="32" y="23" class="mono event-title">revision verified</text>
+      <text x="32" y="45" class="mono event-small">signed · current · allowed</text>
     </g>
     <g transform="translate(65 448)">
       <circle r="8" fill="#bdf000"/>
-      <rect x="28" y="-27" width="230" height="86" rx="3" fill="#171818" stroke="#555654"/>
-      <text x="46" y="-2" class="mono micro" fill="#bdf000">EVENT 0044 · ROUTE</text>
-      <text x="46" y="23" class="mono event-title">model selected</text>
-      <text x="46" y="45" class="mono event-small">provider · task · route</text>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#171818" stroke="#555654"/>
+      <text x="32" y="-2" class="mono micro" fill="#bdf000">EVENT 0044 · ROUTE</text>
+      <text x="32" y="23" class="mono event-title">model selected</text>
+      <text x="32" y="45" class="mono event-small">provider · task · route</text>
     </g>
     <g transform="translate(65 576)">
       <circle r="8" fill="#f4eee3"/>
-      <rect x="28" y="-27" width="230" height="86" rx="3" fill="#171818" stroke="#555654"/>
-      <text x="46" y="-2" class="mono micro">EVENT 0045 · RESULT</text>
-      <text x="46" y="23" class="mono event-title">usage recorded</text>
-      <text x="46" y="45" class="mono event-small">tokens · latency · cost</text>
+      <rect x="16" y="-27" width="248" height="86" rx="3" fill="#171818" stroke="#555654"/>
+      <text x="32" y="-2" class="mono micro">EVENT 0045 · RESULT</text>
+      <text x="32" y="23" class="mono event-title">usage recorded</text>
+      <text x="32" y="45" class="mono event-small">tokens · latency · cost</text>
     </g>
     <text x="50" y="663" class="mono micro">HASH CHAIN VERIFIED</text>
     <text x="50" y="687" class="mono micro">RETENTION POLICY APPLIED</text>
@@ -130,9 +130,9 @@
     <circle cx="352" cy="491" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
   </g>
 
-  <path d="M960 385H1010Q1040 385 1040 355V257Q1040 227 1070 227H1112" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
-  <path d="M960 513H1112" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
-  <path d="M960 641H1010Q1040 641 1040 671V769Q1040 799 1070 799H1112" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <path d="M960 385H1010Q1040 385 1040 355V257Q1040 227 1070 227H1120" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M960 513H1120" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M960 641H1010Q1040 641 1040 671V769Q1040 799 1070 799H1120" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
 
   <g transform="translate(1120 168)">
     <rect class="node" width="334" height="178" rx="5"/>
@@ -149,10 +149,11 @@
     <circle cx="0" cy="89" r="7" fill="#00c8e8"/>
     <text x="28" y="45" class="mono label" fill="#00c8e8">SECURITY</text>
     <text x="28" y="79" class="mono title">USER + DEVICE</text>
-    <g transform="translate(28 108)">
-      <rect width="278" height="42" rx="3" fill="#171818" stroke="#555654"/>
-      <circle cx="22" cy="21" r="6" fill="#00c8e8"/>
-      <text x="42" y="27" class="mono tag">ATTRIBUTED · ACTIVE · VERIFIED</text>
+    <g transform="translate(28 100)">
+      <rect width="278" height="62" rx="3" fill="#171818" stroke="#555654"/>
+      <circle cx="22" cy="31" r="6" fill="#00c8e8"/>
+      <text x="42" y="27" class="mono small">ATTRIBUTED · ACTIVE</text>
+      <text x="42" y="49" class="mono small">VERIFIED</text>
     </g>
   </g>
   <g transform="translate(1120 680)">
