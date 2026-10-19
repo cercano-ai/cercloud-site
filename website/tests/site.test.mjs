@@ -33,7 +33,7 @@ test("ships the complete Cercloud landing page", async () => {
 
   assert.match(html, /https:\/\/github\.com\/cercano-ai\/Cercano/);
   assert.match(html, /href="https:\/\/cercano-ai\.github\.io\/Cercano\/">Start with Cercano/);
-  assert.match(html, /https:\/\/github\.com\/cercano-ai\/cercloud\/blob\/main\/product\/control-plane\.md/);
+  assert.doesNotMatch(html, /https:\/\/github\.com\/cercano-ai\/cercloud/);
 });
 
 test("includes the generated illustration set", async () => {
