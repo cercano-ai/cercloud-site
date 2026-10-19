@@ -21,6 +21,7 @@
       .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
       .label { fill: #a6a29b; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
       .title { fill: #f4eee3; font-size: 25px; font-weight: 600; letter-spacing: .5px; }
+      .title-compact { fill: #f4eee3; font-size: 20px; font-weight: 600; letter-spacing: .2px; }
       .small { fill: #767676; font-size: 16px; font-weight: 500; }
       .node { fill: #202121; stroke: #555654; stroke-width: 2; }
       .node-line { stroke: #3d3e3d; stroke-width: 2; }
@@ -65,7 +66,7 @@
     <path d="M29 99H103M40 78H92M40 120H92" stroke="#bdf000" stroke-width="4"/>
     <circle cx="29" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
     <circle cx="103" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
-    <text x="132" y="88" class="mono title">COMPATIBLE APPS</text>
+    <text x="132" y="88" class="mono title-compact">COMPATIBLE APPS</text>
     <text x="132" y="116" class="mono small">OpenAI-compatible</text>
     <circle cx="330" cy="77" r="7" fill="#bdf000"/>
   </g>
