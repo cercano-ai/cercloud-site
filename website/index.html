@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cercloud is the control plane for enterprise AI: one policy, identity, routing, and audit layer across local and cloud models." />
+    <meta name="theme-color" content="#fbf3e0" />
+    <title>Cercloud — The control plane for enterprise AI</title>
+    <link rel="canonical" href="https://cercano-ai.github.io/cercloud-site/" />
+    <meta property="og:title" content="Cercloud — The control plane for enterprise AI" />
+    <meta property="og:description" content="One policy, identity, routing, and audit layer across local and cloud models." />
+    <meta property="og:url" content="https://cercano-ai.github.io/cercloud-site/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("cercloud-theme");
+          const preferred = matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "day";
+          document.documentElement.dataset.theme = saved || preferred;
+        } catch (_) {
+          document.documentElement.dataset.theme = "day";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Cercloud home">
+          <span class="prompt" aria-hidden="true">&gt;_</span>
+          <span>cercloud</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#platform">Platform</a>
+          <a href="#trust">Trust</a>
+          <a href="#plans">Plans</a>
+          <a href="https://github.com/cercano-ai/Cercano">Cercano ↗</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to night theme" aria-pressed="false">
+            <span class="theme-name">Day</span>
+            <span class="theme-track" aria-hidden="true"><span></span></span>
+          </button>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Cercano is the interface · Cercloud is the control plane</p>
+            <h1 id="hero-title">Govern every model.<br /><em>Keep <wbr />developers <wbr />moving.</em></h1>
+            <p class="lede">One neutral policy, identity, routing, and audit layer across local runtimes, partner backends, and frontier APIs.</p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#platform">Explore the control plane <span>↓</span></a>
+              <a class="button button--quiet" href="https://github.com/cercano-ai/Cercano">Start with Cercano <span>↗</span></a>
+            </div>
+          </div>
+          <figure class="hero-visual visual-frame visual-frame--hero">
+            <img src="assets/control-plane.webp" alt="A central Cercloud control plane routing developer tools to local, partner, and cloud model infrastructure" width="1536" height="1024" />
+            <figcaption><span>01</span> One governed layer across the AI estate.</figcaption>
+          </figure>
+        </section>
+
+        <section class="signal-strip" aria-label="Platform principles">
+          <span>Model neutral</span>
+          <span>Edge enforced</span>
+          <span>OpenAI compatible</span>
+          <span>Audit ready</span>
+        </section>
+
+        <section class="manifesto" aria-labelledby="manifesto-title">
+          <p class="section-label">The problem</p>
+          <h2 id="manifesto-title">Your AI stack is already plural.<br /><em>Governance shouldn’t be.</em></h2>
+          <p>Most teams rebuild the same layer from gateway glue, environment variables, request logs, and spreadsheets. Cercloud turns that accidental infrastructure into one deliberate control plane.</p>
+        </section>
+
+        <section class="platform" id="platform" aria-labelledby="platform-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Product / Enterprise</p>
+              <h2 id="platform-title">Control without constraining the work.</h2>
+            </div>
+            <p>Developers keep the tools and models that make them effective. The organization gets a legible, enforceable system around them.</p>
+          </div>
+
+          <article class="feature-story">
+            <div class="feature-copy">
+              <span class="feature-code">01 / POLICY</span>
+              <h3>Decide what is allowed—once.</h3>
+              <p class="feature-lead">Approved connections, per-task routes, and shared skills become signed policy, not tribal knowledge.</p>
+              <p class="feature-body">Admins publish immutable revisions. Each enrolled Cercano host fetches a short-lived signed bundle and evaluates it before inference, failing closed when the lease expires.</p>
+              <a class="text-link" href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">Read the control-plane brief <span>↗</span></a>
+            </div>
+            <figure class="feature-visual visual-frame">
+              <img src="assets/policy-edge.webp" alt="A signed policy gate allowing an approved model request and rejecting a blocked request" width="1536" height="1024" loading="lazy" />
+              <figcaption><span>POLICY / 01</span> Signed revisions. Short leases. Edge enforcement.</figcaption>
+            </figure>
+          </article>
+
+          <article class="feature-story feature-story--reverse">
+            <div class="feature-copy">
+              <span class="feature-code">02 / ROUTING</span>
+              <h3>Use the right model path.</h3>
+              <p class="feature-lead">Keep frontier models for the work that needs them. Move routine and sensitive tasks to cheaper or local destinations.</p>
+              <p class="feature-body">Cercloud governs a mixed estate instead of forcing it into one vendor. Cercano optimizes at the source; the control plane applies policy across the fleet.</p>
+              <ul class="feature-list">
+                <li>Local runtimes</li>
+                <li>Partner backends</li>
+                <li>Frontier APIs</li>
+                <li>Any compatible harness</li>
+              </ul>
+            </div>
+            <div class="route-map" aria-label="Applications connect through Cercloud to local, partner, and frontier models">
+              <div class="route-source">
+                <span>Interfaces</span>
+                <strong>Cercano</strong>
+                <strong>IDE + agents</strong>
+                <strong>Compatible apps</strong>
+              </div>
+              <div class="route-line"><i></i></div>
+              <div class="route-core">
+                <span>Control plane</span>
+                <strong>Policy</strong>
+                <strong>Identity</strong>
+                <strong>Routing</strong>
+                <strong>Audit</strong>
+              </div>
+              <div class="route-line route-line--fan"><i></i></div>
+              <div class="route-destinations">
+                <div><b></b><span>Local</span></div>
+                <div><b></b><span>Partner</span></div>
+                <div><b></b><span>Frontier</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-story">
+            <div class="feature-copy">
+              <span class="feature-code">03 / VISIBILITY</span>
+              <h3>Know who used what—and why.</h3>
+              <p class="feature-lead">Tie every governed action to a person, device, team, model connection, task, and policy revision.</p>
+              <p class="feature-body">Turn usage, latency, and cost into something finance, security, and engineering can act on—without asking developers to reconstruct the story from logs.</p>
+              <a class="text-link" href="https://github.com/cercano-ai/cercloud/blob/main/product/identity-and-auth.md">See identity and attribution <span>↗</span></a>
+            </div>
+            <figure class="feature-visual visual-frame">
+              <img src="assets/audit-visibility.webp" alt="Developer requests flowing into an immutable audit ledger with usage and cost visibility" width="1536" height="1024" loading="lazy" />
+              <figcaption><span>AUDIT / 03</span> Identity, attribution, usage, and cost in one view.</figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <section class="how" aria-labelledby="how-title">
+          <div class="section-heading section-heading--compact">
+            <div>
+              <p class="section-label">How it works</p>
+              <h2 id="how-title">One policy loop.<br />Every request.</h2>
+            </div>
+          </div>
+          <ol class="steps">
+            <li><span>01</span><h3>Connect the estate</h3><p>Register approved providers, endpoints, local runtimes, and model connections.</p></li>
+            <li><span>02</span><h3>Publish policy</h3><p>Set routes and shared skills by organization, team, task, and connection.</p></li>
+            <li><span>03</span><h3>Enforce at the edge</h3><p>Signed policy is verified by Cercano before each inference request runs.</p></li>
+            <li><span>04</span><h3>Audit the result</h3><p>Activity returns with identity, device, task, route, and revision attached.</p></li>
+          </ol>
+        </section>
+
+        <section class="trust" id="trust" aria-labelledby="trust-title">
+          <div class="trust-intro">
+            <p class="section-label">The Trust Layer</p>
+            <h2 id="trust-title">Security claims should be inspectable.</h2>
+            <p>We draw a hard line between what V1 enforces now and what requires the optional inference proxy on the roadmap.</p>
+          </div>
+          <div class="trust-columns">
+            <article>
+              <div class="status status--live"><i></i> Enforced in V1</div>
+              <ul>
+                <li>Google Workspace sign-in</li>
+                <li>Per-org tenant isolation</li>
+                <li>Approved model connections</li>
+                <li>Per-task routing</li>
+                <li>Signed policy with short leases</li>
+                <li>Tamper-evident admin audit</li>
+                <li>Device enrollment and revocation</li>
+              </ul>
+            </article>
+            <article>
+              <div class="status status--roadmap"><i></i> Clearly on the roadmap</div>
+              <ul>
+                <li>In-flight PII and PHI redaction</li>
+                <li>Output filtering and guardrails</li>
+                <li>Data-residency enforcement</li>
+                <li>Retention controls</li>
+                <li>SCIM and LDAP</li>
+                <li>Optional inference proxy</li>
+                <li>Operated-in-your-boundary deployments</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="plans" id="plans" aria-labelledby="plans-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">One family / Three tiers</p>
+              <h2 id="plans-title">Start open. Add persistence. Govern the organization.</h2>
+            </div>
+            <p>The agent developers choose and the control plane the organization needs, designed as one system.</p>
+          </div>
+          <div class="plan-grid">
+            <article class="plan-card">
+              <span class="plan-number">01 / FREE</span>
+              <h3>Cercano</h3>
+              <p class="plan-tagline">The open-source agent developers live in.</p>
+              <ul>
+                <li>Local and frontier models</li>
+                <li>Routing and delegation</li>
+                <li>Managed local runtime</li>
+                <li>Apache 2.0</li>
+              </ul>
+              <a href="https://github.com/cercano-ai/Cercano">Get Cercano <span>↗</span></a>
+            </article>
+            <article class="plan-card">
+              <span class="plan-number">02 / PRO · EARLY</span>
+              <h3>Cercloud Pro</h3>
+              <p class="plan-tagline">The same agent, persistent and connected.</p>
+              <ul>
+                <li>Always-on hosted agent</li>
+                <li>Reachable beyond the terminal</li>
+                <li>Trusted team relationships</li>
+                <li>Per-seat direction</li>
+              </ul>
+              <span class="plan-state">Product design in progress</span>
+            </article>
+            <article class="plan-card plan-card--featured">
+              <span class="plan-number">03 / ENTERPRISE · PILOT</span>
+              <h3>Cercloud Enterprise</h3>
+              <p class="plan-tagline">The managed control plane for the whole AI estate.</p>
+              <ul>
+                <li>Identity and tenant isolation</li>
+                <li>Policy and model governance</li>
+                <li>Device and audit visibility</li>
+                <li>Contract pricing and support</li>
+              </ul>
+              <a href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">View the V1 brief <span>↗</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="closing" aria-labelledby="closing-title">
+          <div>
+            <p class="section-label">Now building</p>
+            <h2 id="closing-title">Govern the work.<br /><em>Not the developer.</em></h2>
+          </div>
+          <div class="closing-copy">
+            <p>Cercloud Enterprise V1 is implemented and moving into live acceptance and pilot deployment. We’re building with regulated teams that want a governed path to local and cloud AI without another token reseller in the middle.</p>
+            <div class="closing-links">
+              <a href="https://github.com/cercano-ai/Cercano">Start with open source <span>↗</span></a>
+              <a href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">Read the product brief <span>↗</span></a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <a href="#top">Cercloud — Enterprise AI, governed.</a>
+        <a href="https://github.com/cercano-ai/Cercano">Built on Cercano ↗</a>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "cercloud-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/site.test.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "test:pages": "npm test && npm run build:pages && node --test tests/pages.test.mjs",
+    "serve": "python3 -m http.server 4173 --directory ."
+  }
+}
