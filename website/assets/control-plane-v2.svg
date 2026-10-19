@@ -115,34 +115,34 @@
     <circle cx="296" cy="369" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
   </g>
 
-  <path d="M916 401H966Q996 401 996 371V251Q996 221 1026 221H1124" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M916 401H966Q996 401 996 371V281Q996 251 1026 251H1124" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
   <path d="M916 507H1124" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
-  <path d="M916 613H966Q996 613 996 643V763Q996 793 1026 793H1124" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <path d="M916 613H966Q996 613 996 643V733Q996 763 1026 763H1124" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
 
   <!-- infrastructure endpoints are flat technical panels, not toy hardware -->
-  <g transform="translate(1124 150)">
-    <rect class="node" width="330" height="142" rx="5"/>
-    <rect x="24" y="31" width="64" height="80" fill="#171818" stroke="#ea8212" stroke-width="2"/>
-    <path d="M37 51H75M37 71H75M37 91H75" stroke="#ea8212" stroke-width="3"/>
-    <text x="116" y="65" class="mono title">LOCAL</text>
-    <text x="116" y="94" class="mono small">private runtimes</text>
-    <circle cx="0" cy="71" r="7" fill="#ea8212"/>
+  <g transform="translate(1124 174)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <rect x="24" y="37" width="64" height="80" fill="#171818" stroke="#ea8212" stroke-width="2"/>
+    <path d="M37 57H75M37 77H75M37 97H75" stroke="#ea8212" stroke-width="3"/>
+    <text x="116" y="71" class="mono title">LOCAL</text>
+    <text x="116" y="100" class="mono small">private runtimes</text>
+    <circle cx="0" cy="77" r="7" fill="#ea8212"/>
   </g>
-  <g transform="translate(1124 436)">
-    <rect class="node" width="330" height="142" rx="5"/>
-    <path d="M28 71H83M41 48H70M41 94H70" stroke="#00c8e8" stroke-width="4"/>
-    <circle cx="28" cy="71" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
-    <circle cx="83" cy="71" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
-    <text x="116" y="65" class="mono title">PARTNER</text>
-    <text x="116" y="94" class="mono small">approved backends</text>
-    <circle cx="0" cy="71" r="7" fill="#00c8e8"/>
+  <g transform="translate(1124 430)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <path d="M28 77H83M41 54H70M41 100H70" stroke="#00c8e8" stroke-width="4"/>
+    <circle cx="28" cy="77" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <circle cx="83" cy="77" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <text x="116" y="71" class="mono title">PARTNER</text>
+    <text x="116" y="100" class="mono small">approved backends</text>
+    <circle cx="0" cy="77" r="7" fill="#00c8e8"/>
   </g>
-  <g transform="translate(1124 722)">
-    <rect class="node" width="330" height="142" rx="5"/>
-    <path d="M25 87C25 66 40 53 58 53C67 35 91 34 103 49C123 48 137 64 137 82C137 100 123 111 104 111H54C37 111 25 102 25 87Z" transform="translate(-4 -11) scale(.72)" fill="none" stroke="#bdf000" stroke-width="5"/>
-    <text x="116" y="65" class="mono title">FRONTIER</text>
-    <text x="116" y="94" class="mono small">model APIs</text>
-    <circle cx="0" cy="71" r="7" fill="#bdf000"/>
+  <g transform="translate(1124 686)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <path d="M25 87C25 66 40 53 58 53C67 35 91 34 103 49C123 48 137 64 137 82C137 100 123 111 104 111H54C37 111 25 102 25 87Z" transform="translate(-4 -5) scale(.72)" fill="none" stroke="#bdf000" stroke-width="5"/>
+    <text x="116" y="71" class="mono title">FRONTIER</text>
+    <text x="116" y="100" class="mono small">model APIs</text>
+    <circle cx="0" cy="77" r="7" fill="#bdf000"/>
   </g>
 
   <text x="82" y="930" class="mono small">ONE POLICY PATH · DISTINCT CONNECTIONS · AUDITABLE ROUTES</text>
