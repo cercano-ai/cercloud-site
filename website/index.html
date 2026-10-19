@@ -95,9 +95,17 @@
               <p class="feature-lead">Approved connections, per-task routes, and shared skills become signed policy, not tribal knowledge.</p>
               <p class="feature-body">Admins publish immutable revisions. Each enrolled Cercano host fetches a short-lived signed bundle and evaluates it before inference, failing closed when the lease expires.</p>
             </div>
-            <figure class="feature-visual visual-frame">
-              <img src="assets/policy-edge.webp" alt="A signed policy gate allowing an approved model request and rejecting a blocked request" width="1536" height="1024" loading="lazy" />
-              <figcaption><span>POLICY / 01</span> Signed revisions. Short leases. Edge enforcement.</figcaption>
+            <figure class="feature-visual visual-frame visual-frame--product">
+              <img
+                src="assets/model-policy-960.webp"
+                srcset="assets/model-policy-960.webp 960w, assets/model-policy-1440.webp 1440w"
+                sizes="(max-width: 1120px) calc(100vw - 48px), 60vw"
+                alt="Cercano administration console showing the model policy editor, with approved provider connections, use-case destinations, quality levels, and a review-and-publish step."
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <figcaption><span>CONSOLE / POLICY</span> Model access, task defaults, and review before publish.</figcaption>
             </figure>
           </article>
 
@@ -188,36 +196,20 @@
               <span class="feature-code">04 / IDENTITY</span>
               <h3>Connect governance to real people.</h3>
               <p class="feature-lead">Identity turns policy into permission, usage into attribution, and an audit event into an accountable action.</p>
-              <p class="feature-body">Connect Google Workspace over OIDC or integrate through SAML, SCIM, and LDAP. Cercloud binds organization membership, directory groups, roles, and enrolled hosts to permissions—then attributes every governed action to the person behind it.</p>
+              <p class="feature-body">Connect Google Workspace over OIDC or integrate through SAML 2.0, SCIM 2.0, and LDAP. Cercloud binds organization membership, directory groups, roles, and enrolled hosts to permissions—then attributes every governed action to the person behind it.</p>
             </div>
-            <div class="identity-panel" aria-label="Enterprise identity connects organizational directories to permissions, policy, and per-user attribution">
-              <div class="panel-bar">
-                <span>Enterprise identity / organization bound</span>
-                <i></i>
-              </div>
-              <div class="identity-primary">
-                <span class="panel-status">Identity + attribution</span>
-                <div class="identity-flow">
-                  <div><small>Identity provider</small><strong>Google Workspace</strong><b>OIDC sign-in</b></div>
-                  <i aria-hidden="true">→</i>
-                  <div><small>Cercloud</small><strong>Org · member · host</strong><b>short-lived access</b></div>
-                  <i aria-hidden="true">→</i>
-                  <div><small>Control plane</small><strong>Policy + audit</strong><b>per-user attribution</b></div>
-                </div>
-              </div>
-              <div class="identity-directory">
-                <span class="panel-status panel-status--directory">Directory + provisioning</span>
-                <div class="identity-providers">
-                  <strong>SAML 2.0</strong>
-                  <strong>SCIM 2.0</strong>
-                  <strong>LDAP</strong>
-                  <strong>Directory sync</strong>
-                </div>
-                <div class="identity-mapping">
-                  <span>Directory groups</span><i>→</i><span>Permissions</span><i>→</i><span>Models + policy</span>
-                </div>
-              </div>
-            </div>
+            <figure class="feature-visual visual-frame visual-frame--product">
+              <img
+                src="assets/people-teams-960.webp"
+                srcset="assets/people-teams-960.webp 960w, assets/people-teams-1440.webp 1440w"
+                sizes="(max-width: 1120px) calc(100vw - 48px), 60vw"
+                alt="Cercano administration console showing the People and teams page, with a member list, roles, team assignments, and an invitation form."
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <figcaption><span>CONSOLE / IDENTITY</span> People, roles, teams, and access in one organization view.</figcaption>
+            </figure>
           </article>
 
           <article class="feature-story">

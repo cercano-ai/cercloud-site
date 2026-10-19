@@ -21,6 +21,10 @@ test("includes every production asset and excludes development files", async () 
     "assets/policy-edge.webp",
     "assets/audit-visibility.webp",
     "assets/favicon.svg",
+    "assets/model-policy-960.webp",
+    "assets/model-policy-1440.webp",
+    "assets/people-teams-960.webp",
+    "assets/people-teams-1440.webp",
   ]) {
     const asset = await stat(new URL(file, dist));
     assert.ok(asset.size > 0, `${file} should be present in the Pages artifact`);

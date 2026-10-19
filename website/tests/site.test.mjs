@@ -36,11 +36,20 @@ test("ships the complete Cercloud landing page", async () => {
   assert.doesNotMatch(html, /https:\/\/github\.com\/cercano-ai\/cercloud/);
 });
 
-test("includes the generated illustration set", async () => {
+test("includes the illustration and console screenshot sets", async () => {
   for (const name of ["control-plane", "policy-edge", "audit-visibility"]) {
     await access(new URL(`assets/${name}.webp`, root));
   }
   await access(new URL("assets/favicon.svg", root));
+
+  for (const file of [
+    "model-policy-960.webp",
+    "model-policy-1440.webp",
+    "people-teams-960.webp",
+    "people-teams-1440.webp",
+  ]) {
+    await access(new URL(`assets/${file}`, root));
+  }
 });
 
 test("preserves the Cercano palette and day-night behavior", async () => {
