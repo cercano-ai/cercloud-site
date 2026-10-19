@@ -37,6 +37,8 @@
         </a>
         <nav class="primary-nav" aria-label="Primary navigation">
           <a href="#platform">Platform</a>
+          <a href="#cost">Cost</a>
+          <a href="#identity">Identity</a>
           <a href="#trust">Trust</a>
           <a href="#plans">Plans</a>
           <a href="https://github.com/cercano-ai/Cercano">Cercano ↗</a>
@@ -137,9 +139,92 @@
             </div>
           </article>
 
+          <article class="feature-story" id="cost">
+            <div class="feature-copy">
+              <span class="feature-code">03 / COST GOVERNANCE</span>
+              <h3>Make every token earn its place.</h3>
+              <p class="feature-lead">Drive spend down through better decisions, not a race to mark tokens up less.</p>
+              <p class="feature-body">Route routine work to efficient models and providers, reserve frontier models for the tasks that need them, and reduce the context each request carries through compaction and caching. Then put budgets, quotas, showback, and chargeback around the whole fleet.</p>
+              <ul class="feature-list">
+                <li>Smart model routing</li>
+                <li>Provider optimization</li>
+                <li>Context compaction</li>
+                <li>Response caching</li>
+                <li>Budgets + quotas</li>
+                <li>Showback + chargeback</li>
+              </ul>
+            </div>
+            <div class="cost-panel" aria-label="Cost governance routes work by complexity, reduces token use, and applies organizational controls">
+              <div class="panel-bar">
+                <span>Cost control / policy active</span>
+                <i></i>
+              </div>
+              <div class="cost-routes">
+                <div class="cost-input">
+                  <span>Incoming work</span>
+                  <strong>Classify task</strong>
+                  <small>complexity · sensitivity · policy</small>
+                </div>
+                <div class="cost-arrow" aria-hidden="true">→</div>
+                <div class="cost-destinations">
+                  <div><span>Routine</span><strong>Efficient model</strong><small>lowest suitable cost</small></div>
+                  <div><span>Specialized</span><strong>Best-fit provider</strong><small>capability matched</small></div>
+                  <div><span>Complex</span><strong>Frontier model</strong><small>reserved when needed</small></div>
+                </div>
+              </div>
+              <div class="cost-levers">
+                <div><span>Context</span><strong>Compact</strong><b>less carried forward</b></div>
+                <div><span>Cache</span><strong>Reuse</strong><b>avoid repeat work</b></div>
+                <div><span>Budget</span><strong>Govern</strong><b>quota by team + user</b></div>
+              </div>
+              <div class="panel-foot">
+                <span>Attribute every request</span>
+                <strong>showback → chargeback</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-story feature-story--reverse" id="identity">
+            <div class="feature-copy">
+              <span class="feature-code">04 / IDENTITY</span>
+              <h3>Connect governance to real people.</h3>
+              <p class="feature-lead">Identity turns policy into permission, usage into attribution, and an audit event into an accountable action.</p>
+              <p class="feature-body">Google Workspace sign-in over OIDC is live today, with organization-bound membership, admin and developer roles, enrolled hosts, and per-user attribution. SAML, SCIM, LDAP, directory sync, and group-to-permission mapping are planned for the Enterprise identity layer.</p>
+              <a class="text-link" href="https://github.com/cercano-ai/cercloud/blob/main/product/identity-and-auth.md">Read the identity brief <span>↗</span></a>
+            </div>
+            <div class="identity-panel" aria-label="Google Workspace identity is live today, with enterprise directory integrations on the roadmap">
+              <div class="panel-bar">
+                <span>Enterprise identity / organization bound</span>
+                <i></i>
+              </div>
+              <div class="identity-live">
+                <span class="panel-status panel-status--live">Live today</span>
+                <div class="identity-flow">
+                  <div><small>Identity provider</small><strong>Google Workspace</strong><b>OIDC sign-in</b></div>
+                  <i aria-hidden="true">→</i>
+                  <div><small>Cercloud</small><strong>Org · member · host</strong><b>short-lived access</b></div>
+                  <i aria-hidden="true">→</i>
+                  <div><small>Control plane</small><strong>Policy + audit</strong><b>per-user attribution</b></div>
+                </div>
+              </div>
+              <div class="identity-roadmap">
+                <span class="panel-status panel-status--roadmap">Enterprise roadmap</span>
+                <div class="identity-providers">
+                  <strong>SAML 2.0</strong>
+                  <strong>SCIM 2.0</strong>
+                  <strong>LDAP</strong>
+                  <strong>Directory sync</strong>
+                </div>
+                <div class="identity-mapping">
+                  <span>Directory groups</span><i>→</i><span>Permissions</span><i>→</i><span>Models + policy</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
           <article class="feature-story">
             <div class="feature-copy">
-              <span class="feature-code">03 / VISIBILITY</span>
+              <span class="feature-code">05 / VISIBILITY</span>
               <h3>Know who used what—and why.</h3>
               <p class="feature-lead">Tie every governed action to a person, device, team, model connection, task, and policy revision.</p>
               <p class="feature-body">Turn usage, latency, and cost into something finance, security, and engineering can act on—without asking developers to reconstruct the story from logs.</p>
@@ -147,7 +232,7 @@
             </div>
             <figure class="feature-visual visual-frame">
               <img src="assets/audit-visibility.webp" alt="Developer requests flowing into an immutable audit ledger with usage and cost visibility" width="1536" height="1024" loading="lazy" />
-              <figcaption><span>AUDIT / 03</span> Identity, attribution, usage, and cost in one view.</figcaption>
+              <figcaption><span>AUDIT / 05</span> Identity, attribution, usage, and cost in one view.</figcaption>
             </figure>
           </article>
         </section>
@@ -193,6 +278,7 @@
                 <li>Output filtering and guardrails</li>
                 <li>Data-residency enforcement</li>
                 <li>Retention controls</li>
+                <li>SAML 2.0</li>
                 <li>SCIM and LDAP</li>
                 <li>Optional inference proxy</li>
                 <li>Operated-in-your-boundary deployments</li>
