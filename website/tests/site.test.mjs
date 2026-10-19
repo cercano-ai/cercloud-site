@@ -14,16 +14,20 @@ test("ships the complete Cercloud landing page", async () => {
     "Use the right model path.",
     "Make every token earn its place.",
     "Connect governance to real people.",
-    "Google Workspace sign-in over OIDC is live today",
+    "Connect Google Workspace over OIDC",
     "SAML 2.0",
     "SCIM 2.0",
     "Showback + chargeback",
     "Know who used what—and why.",
-    "Enforced in V1",
-    "Clearly on the roadmap",
+    "Identity + access",
+    "Data + infrastructure",
     "Cercloud Enterprise",
   ]) {
     assert.match(html, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+
+  for (const qualifier of ["live today", "on the roadmap", "Product design in progress", "ENTERPRISE · PILOT", "PRO · EARLY", "V1 brief"]) {
+    assert.doesNotMatch(html, new RegExp(qualifier, "i"));
   }
 
   assert.match(html, /https:\/\/github\.com\/cercano-ai\/Cercano/);

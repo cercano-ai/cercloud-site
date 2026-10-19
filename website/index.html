@@ -189,16 +189,16 @@
               <span class="feature-code">04 / IDENTITY</span>
               <h3>Connect governance to real people.</h3>
               <p class="feature-lead">Identity turns policy into permission, usage into attribution, and an audit event into an accountable action.</p>
-              <p class="feature-body">Google Workspace sign-in over OIDC is live today, with organization-bound membership, admin and developer roles, enrolled hosts, and per-user attribution. SAML, SCIM, LDAP, directory sync, and group-to-permission mapping are planned for the Enterprise identity layer.</p>
+              <p class="feature-body">Connect Google Workspace over OIDC or integrate through SAML, SCIM, and LDAP. Cercloud binds organization membership, directory groups, roles, and enrolled hosts to permissions—then attributes every governed action to the person behind it.</p>
               <a class="text-link" href="https://github.com/cercano-ai/cercloud/blob/main/product/identity-and-auth.md">Read the identity brief <span>↗</span></a>
             </div>
-            <div class="identity-panel" aria-label="Google Workspace identity is live today, with enterprise directory integrations on the roadmap">
+            <div class="identity-panel" aria-label="Enterprise identity connects organizational directories to permissions, policy, and per-user attribution">
               <div class="panel-bar">
                 <span>Enterprise identity / organization bound</span>
                 <i></i>
               </div>
-              <div class="identity-live">
-                <span class="panel-status panel-status--live">Live today</span>
+              <div class="identity-primary">
+                <span class="panel-status">Identity + attribution</span>
                 <div class="identity-flow">
                   <div><small>Identity provider</small><strong>Google Workspace</strong><b>OIDC sign-in</b></div>
                   <i aria-hidden="true">→</i>
@@ -207,8 +207,8 @@
                   <div><small>Control plane</small><strong>Policy + audit</strong><b>per-user attribution</b></div>
                 </div>
               </div>
-              <div class="identity-roadmap">
-                <span class="panel-status panel-status--roadmap">Enterprise roadmap</span>
+              <div class="identity-directory">
+                <span class="panel-status panel-status--directory">Directory + provisioning</span>
                 <div class="identity-providers">
                   <strong>SAML 2.0</strong>
                   <strong>SCIM 2.0</strong>
@@ -256,11 +256,11 @@
           <div class="trust-intro">
             <p class="section-label">The Trust Layer</p>
             <h2 id="trust-title">Security claims should be inspectable.</h2>
-            <p>We draw a hard line between what V1 enforces now and what requires the optional inference proxy on the roadmap.</p>
+            <p>One inspectable policy surface connects identity, model access, data handling, deployment boundaries, and the audit trail behind every request.</p>
           </div>
           <div class="trust-columns">
             <article>
-              <div class="status status--live"><i></i> Enforced in V1</div>
+              <div class="status"><i></i> Identity + access</div>
               <ul>
                 <li>Google Workspace sign-in</li>
                 <li>Per-org tenant isolation</li>
@@ -272,7 +272,7 @@
               </ul>
             </article>
             <article>
-              <div class="status status--roadmap"><i></i> Clearly on the roadmap</div>
+              <div class="status status--controls"><i></i> Data + infrastructure</div>
               <ul>
                 <li>In-flight PII and PHI redaction</li>
                 <li>Output filtering and guardrails</li>
@@ -309,19 +309,19 @@
               <a href="https://github.com/cercano-ai/Cercano">Get Cercano <span>↗</span></a>
             </article>
             <article class="plan-card">
-              <span class="plan-number">02 / PRO · EARLY</span>
+              <span class="plan-number">02 / PRO</span>
               <h3>Cercloud Pro</h3>
               <p class="plan-tagline">The same agent, persistent and connected.</p>
               <ul>
                 <li>Always-on hosted agent</li>
                 <li>Reachable beyond the terminal</li>
                 <li>Trusted team relationships</li>
-                <li>Per-seat direction</li>
+                <li>Per-seat accounts</li>
               </ul>
-              <span class="plan-state">Product design in progress</span>
+              <span class="plan-state">Per-seat plans</span>
             </article>
             <article class="plan-card plan-card--featured">
-              <span class="plan-number">03 / ENTERPRISE · PILOT</span>
+              <span class="plan-number">03 / ENTERPRISE</span>
               <h3>Cercloud Enterprise</h3>
               <p class="plan-tagline">The managed control plane for the whole AI estate.</p>
               <ul>
@@ -330,18 +330,18 @@
                 <li>Device and audit visibility</li>
                 <li>Contract pricing and support</li>
               </ul>
-              <a href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">View the V1 brief <span>↗</span></a>
+              <a href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">View the Enterprise brief <span>↗</span></a>
             </article>
           </div>
         </section>
 
         <section class="closing" aria-labelledby="closing-title">
           <div>
-            <p class="section-label">Now building</p>
+            <p class="section-label">The control plane</p>
             <h2 id="closing-title">Govern the work.<br /><em>Not the developer.</em></h2>
           </div>
           <div class="closing-copy">
-            <p>Cercloud Enterprise V1 is implemented and moving into live acceptance and pilot deployment. We’re building with regulated teams that want a governed path to local and cloud AI without another token reseller in the middle.</p>
+            <p>Cercloud gives regulated teams a governed path to local and cloud AI: enterprise identity, enforceable policy, cost controls, and a complete audit trail without another token reseller in the middle.</p>
             <div class="closing-links">
               <a href="https://github.com/cercano-ai/Cercano">Start with open source <span>↗</span></a>
               <a href="https://github.com/cercano-ai/cercloud/blob/main/product/control-plane.md">Read the product brief <span>↗</span></a>
