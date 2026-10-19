@@ -21,6 +21,7 @@ test("includes every production asset and excludes development files", async () 
     "assets/control-plane-v2.svg",
     "assets/policy-edge.webp",
     "assets/audit-visibility.webp",
+    "assets/audit-visibility-v2.svg",
     "assets/favicon.svg",
     "assets/model-policy-960.webp",
     "assets/model-policy-1440.webp",
