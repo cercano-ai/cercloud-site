@@ -10,7 +10,7 @@ test("builds a GitHub Pages artifact for the Cercloud project site", async () =>
   assert.match(html, /https:\/\/cercano-ai\.github\.io\/cercloud-site\//);
   assert.match(html, /href="styles\.css"/);
   assert.match(html, /src="site\.js"/);
-  assert.match(html, /src="assets\/control-plane\.webp"/);
+  assert.match(html, /src="assets\/control-plane-v2\.svg"/);
   assert.doesNotMatch(html, /(?:href|src)="\/[^/"]/);
   await access(new URL(".nojekyll", dist));
 });
@@ -18,6 +18,7 @@ test("builds a GitHub Pages artifact for the Cercloud project site", async () =>
 test("includes every production asset and excludes development files", async () => {
   for (const file of [
     "assets/control-plane.webp",
+    "assets/control-plane-v2.svg",
     "assets/policy-edge.webp",
     "assets/audit-visibility.webp",
     "assets/favicon.svg",

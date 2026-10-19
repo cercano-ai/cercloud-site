@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Cercloud enterprise AI control plane</title>
+  <desc id="desc">Three developer interfaces connect through separate ports to a central Cercloud policy, identity, routing, and audit layer, which routes to local, partner, and frontier model infrastructure.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#ea8212"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#00c8e8"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#bdf000"/>
+    </marker>
+    <style>
+      .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+      .label { fill: #a6a29b; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
+      .title { fill: #f4eee3; font-size: 25px; font-weight: 600; letter-spacing: .5px; }
+      .small { fill: #767676; font-size: 16px; font-weight: 500; }
+      .node { fill: #202121; stroke: #555654; stroke-width: 2; }
+      .node-line { stroke: #3d3e3d; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="#111212"/>
+  <rect x="36" y="36" width="1464" height="952" fill="url(#grid)" stroke="#3c3d3c" stroke-width="2"/>
+  <text x="82" y="92" class="mono label">INTERFACES</text>
+  <text x="648" y="92" class="mono label">CONTROL PLANE</text>
+  <text x="1242" y="92" class="mono label">MODEL ESTATE</text>
+
+  <!-- restrained interface windows; no laptops or docking bases -->
+  <g transform="translate(82 174)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <path class="node-line" d="M0 40H330"/>
+    <circle cx="22" cy="20" r="5" fill="#ea8212"/>
+    <circle cx="40" cy="20" r="5" fill="#555654"/>
+    <path d="M28 79L45 94L28 109M58 110H103" fill="none" stroke="#ea8212" stroke-width="5" stroke-linecap="square"/>
+    <text x="132" y="88" class="mono title">CERCANO</text>
+    <text x="132" y="116" class="mono small">terminal agent</text>
+    <circle cx="330" cy="77" r="7" fill="#ea8212"/>
+  </g>
+
+  <g transform="translate(82 430)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <path class="node-line" d="M0 40H330"/>
+    <circle cx="22" cy="20" r="5" fill="#00c8e8"/>
+    <circle cx="40" cy="20" r="5" fill="#555654"/>
+    <rect x="28" y="72" width="76" height="52" fill="none" stroke="#00c8e8" stroke-width="4"/>
+    <path d="M40 87H87M40 100H73M40 113H92" stroke="#00c8e8" stroke-width="3"/>
+    <text x="132" y="88" class="mono title">IDE + AGENTS</text>
+    <text x="132" y="116" class="mono small">developer tools</text>
+    <circle cx="330" cy="77" r="7" fill="#00c8e8"/>
+  </g>
+
+  <g transform="translate(82 686)">
+    <rect class="node" width="330" height="154" rx="5"/>
+    <path class="node-line" d="M0 40H330"/>
+    <circle cx="22" cy="20" r="5" fill="#bdf000"/>
+    <circle cx="40" cy="20" r="5" fill="#555654"/>
+    <path d="M29 99H103M40 78H92M40 120H92" stroke="#bdf000" stroke-width="4"/>
+    <circle cx="29" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
+    <circle cx="103" cy="99" r="7" fill="#111212" stroke="#bdf000" stroke-width="3"/>
+    <text x="132" y="88" class="mono title">COMPATIBLE APPS</text>
+    <text x="132" y="116" class="mono small">OpenAI-compatible</text>
+    <circle cx="330" cy="77" r="7" fill="#bdf000"/>
+  </g>
+
+  <!-- independent routes: each terminates at its own port -->
+  <path d="M412 251H520Q560 251 560 291V371Q560 401 590 401H620" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M412 507H620" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M412 763H520Q560 763 560 723V643Q560 613 590 613H620" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <g opacity=".32" filter="url(#soft-glow)">
+    <rect x="616" y="260" width="304" height="500" rx="16" fill="#ea8212"/>
+  </g>
+  <g transform="translate(620 244)">
+    <rect width="296" height="536" rx="8" fill="#191a1a" stroke="#ea8212" stroke-width="3"/>
+    <rect x="22" y="22" width="252" height="492" rx="4" fill="#202121" stroke="#4c4d4c" stroke-width="2"/>
+    <text x="148" y="76" text-anchor="middle" class="mono label" fill="#ea8212">CERCLOUD</text>
+    <text x="148" y="112" text-anchor="middle" class="mono title">CONTROL PLANE</text>
+    <path d="M47 145H249" stroke="#4c4d4c" stroke-width="2"/>
+
+    <g transform="translate(48 184)">
+      <rect width="200" height="54" rx="3" fill="#171818" stroke="#555654"/>
+      <circle cx="20" cy="27" r="5" fill="#ea8212"/>
+      <text x="40" y="34" class="mono title" font-size="20">POLICY</text>
+    </g>
+    <g transform="translate(48 254)">
+      <rect width="200" height="54" rx="3" fill="#171818" stroke="#555654"/>
+      <circle cx="20" cy="27" r="5" fill="#00c8e8"/>
+      <text x="40" y="34" class="mono title" font-size="20">IDENTITY</text>
+    </g>
+    <g transform="translate(48 324)">
+      <rect width="200" height="54" rx="3" fill="#171818" stroke="#555654"/>
+      <circle cx="20" cy="27" r="5" fill="#bdf000"/>
+      <text x="40" y="34" class="mono title" font-size="20">ROUTING</text>
+    </g>
+    <g transform="translate(48 394)">
+      <rect width="200" height="54" rx="3" fill="#171818" stroke="#555654"/>
+      <circle cx="20" cy="27" r="5" fill="#f4eee3"/>
+      <text x="40" y="34" class="mono title" font-size="20">AUDIT</text>
+    </g>
+
+    <circle cx="0" cy="157" r="8" fill="#ea8212" stroke="#111212" stroke-width="3"/>
+    <circle cx="0" cy="263" r="8" fill="#00c8e8" stroke="#111212" stroke-width="3"/>
+    <circle cx="0" cy="369" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
+    <circle cx="296" cy="157" r="8" fill="#ea8212" stroke="#111212" stroke-width="3"/>
+    <circle cx="296" cy="263" r="8" fill="#00c8e8" stroke="#111212" stroke-width="3"/>
+    <circle cx="296" cy="369" r="8" fill="#bdf000" stroke="#111212" stroke-width="3"/>
+  </g>
+
+  <path d="M916 401H966Q996 401 996 371V251Q996 221 1026 221H1116" fill="none" stroke="#ea8212" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M916 507H1116" fill="none" stroke="#00c8e8" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M916 613H966Q996 613 996 643V763Q996 793 1026 793H1116" fill="none" stroke="#bdf000" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <!-- infrastructure endpoints are flat technical panels, not toy hardware -->
+  <g transform="translate(1124 150)">
+    <rect class="node" width="330" height="142" rx="5"/>
+    <rect x="24" y="31" width="64" height="80" fill="#171818" stroke="#ea8212" stroke-width="2"/>
+    <path d="M37 51H75M37 71H75M37 91H75" stroke="#ea8212" stroke-width="3"/>
+    <text x="116" y="65" class="mono title">LOCAL</text>
+    <text x="116" y="94" class="mono small">private runtimes</text>
+    <circle cx="0" cy="71" r="7" fill="#ea8212"/>
+  </g>
+  <g transform="translate(1124 436)">
+    <rect class="node" width="330" height="142" rx="5"/>
+    <path d="M28 71H83M41 48H70M41 94H70" stroke="#00c8e8" stroke-width="4"/>
+    <circle cx="28" cy="71" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <circle cx="83" cy="71" r="6" fill="#111212" stroke="#00c8e8" stroke-width="3"/>
+    <text x="116" y="65" class="mono title">PARTNER</text>
+    <text x="116" y="94" class="mono small">approved backends</text>
+    <circle cx="0" cy="71" r="7" fill="#00c8e8"/>
+  </g>
+  <g transform="translate(1124 722)">
+    <rect class="node" width="330" height="142" rx="5"/>
+    <path d="M25 87C25 66 40 53 58 53C67 35 91 34 103 49C123 48 137 64 137 82C137 100 123 111 104 111H54C37 111 25 102 25 87Z" transform="translate(-4 -11) scale(.72)" fill="none" stroke="#bdf000" stroke-width="5"/>
+    <text x="116" y="65" class="mono title">FRONTIER</text>
+    <text x="116" y="94" class="mono small">model APIs</text>
+    <circle cx="0" cy="71" r="7" fill="#bdf000"/>
+  </g>
+
+  <text x="82" y="930" class="mono small">ONE POLICY PATH · DISTINCT CONNECTIONS · AUDITABLE ROUTES</text>
+  <text x="1454" y="930" text-anchor="end" class="mono small">EDGE ENFORCED</text>
+</svg>

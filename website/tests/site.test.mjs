@@ -41,6 +41,7 @@ test("includes the illustration and console screenshot sets", async () => {
     await access(new URL(`assets/${name}.webp`, root));
   }
   await access(new URL("assets/favicon.svg", root));
+  await access(new URL("assets/control-plane-v2.svg", root));
 
   for (const file of [
     "model-policy-960.webp",
