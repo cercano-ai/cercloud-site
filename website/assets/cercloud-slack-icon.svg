@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cercloud</title>
+  <desc id="desc">An orange terminal prompt and cyan cursor on a dark rounded square.</desc>
+  <rect width="512" height="512" rx="96" fill="#1a1a1a"/>
+  <path
+    d="M120 152L224 232L120 312"
+    fill="none"
+    stroke="#ea8212"
+    stroke-width="48"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+  <path
+    d="M272 336H392"
+    fill="none"
+    stroke="#00c8e8"
+    stroke-width="48"
+    stroke-linecap="butt"
+  />
+</svg>
