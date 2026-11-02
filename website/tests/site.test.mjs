@@ -8,7 +8,8 @@ test("ships the complete Cercloud landing page", async () => {
   const html = await readFile(new URL("index.html", root), "utf8");
 
   for (const copy of [
-    "Govern every model.",
+    "Build at AI speed.",
+    "Govern at enterprise scale.",
     "Your AI stack is already plural.",
     "Decide what is allowed—once.",
     "Use the right model path.",
