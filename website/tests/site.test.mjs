@@ -10,6 +10,7 @@ test("ships the complete Cercloud landing page", async () => {
   for (const copy of [
     "Build at AI speed.",
     "Govern at enterprise scale.",
+    "Accelerate every phase of software delivery with AI.",
     "Your AI stack is already plural.",
     "Decide what is allowed—once.",
     "Use the right model path.",
