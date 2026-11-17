@@ -63,12 +63,17 @@ img { max-width: 100%; height: auto; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
+  gap: 2px;
   font: 600 15px/1 var(--font-mono);
   letter-spacing: .09em;
   text-transform: uppercase;
 }
-.prompt { color: var(--primary); }
+.brand-mark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+}
 .primary-nav { display: flex; align-items: center; gap: 28px; }
 .primary-nav > a {
   color: var(--muted);
