@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cercloud model routing</title>
+  <desc id="desc">Routine, sensitive, and complex work flows through the Cercloud router to local, partner, and frontier model destinations.</desc>
+  <defs>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#7a4e0a"/></marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1763a0"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1e7a3c"/></marker>
+    <style>
+      .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+      .label { fill: #72654e; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
+      .title { fill: #3b3020; font-size: 25px; font-weight: 600; }
+      .small { fill: #72654e; font-size: 16px; font-weight: 500; }
+      .node { fill: #f1e6cc; stroke: #9b8d72; stroke-width: 2; }
+      .rule { stroke: #c9b995; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1536" height="900" fill="#fbf3e0"/>
+  <rect x="36" y="36" width="1464" height="828" fill="none" stroke="#a99a7c" stroke-width="2"/>
+  <text x="82" y="94" class="mono label">WORK REQUIREMENTS</text>
+  <text x="656" y="94" class="mono label">ROUTING DECISION</text>
+  <text x="1220" y="94" class="mono label">MODEL PATH</text>
+
+  <g transform="translate(82 150)"><rect class="node" width="330" height="150" rx="5"/><path class="rule" d="M0 40H330"/><circle cx="22" cy="20" r="5" fill="#7a4e0a"/><circle cx="40" cy="20" r="5" fill="#9b8d72"/><text x="28" y="88" class="mono title">ROUTINE</text><text x="28" y="119" class="mono small">Fast iteration</text><circle cx="330" cy="75" r="7" fill="#7a4e0a"/></g>
+  <g transform="translate(82 375)"><rect class="node" width="330" height="150" rx="5"/><path class="rule" d="M0 40H330"/><circle cx="22" cy="20" r="5" fill="#1763a0"/><circle cx="40" cy="20" r="5" fill="#9b8d72"/><text x="28" y="88" class="mono title">SENSITIVE</text><text x="28" y="119" class="mono small">Private context</text><circle cx="330" cy="75" r="7" fill="#1763a0"/></g>
+  <g transform="translate(82 600)"><rect class="node" width="330" height="150" rx="5"/><path class="rule" d="M0 40H330"/><circle cx="22" cy="20" r="5" fill="#1e7a3c"/><circle cx="40" cy="20" r="5" fill="#9b8d72"/><text x="28" y="88" class="mono title">COMPLEX</text><text x="28" y="119" class="mono small">Frontier reasoning</text><circle cx="330" cy="75" r="7" fill="#1e7a3c"/></g>
+
+  <path d="M412 225H520Q560 225 560 265V275Q560 315 600 315H620" fill="none" stroke="#7a4e0a" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M412 450H620" fill="none" stroke="#1763a0" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M412 675H520Q560 675 560 635V585Q560 545 600 545H620" fill="none" stroke="#1e7a3c" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <g transform="translate(620 175)">
+    <rect width="296" height="550" rx="5" fill="#f1e6cc" stroke="#7a4e0a" stroke-width="3"/><rect x="13" y="13" width="270" height="524" fill="none" stroke="#c9b995" stroke-width="2"/>
+    <text x="42" y="76" class="mono label" fill="#1763a0">CERCLOUD</text><text x="42" y="111" class="mono title">MODEL ROUTER</text><path d="M42 142H254" class="rule"/>
+    <g class="mono small"><circle cx="54" cy="204" r="5" fill="#7a4e0a"/><text x="74" y="211">QUALITY</text><circle cx="54" cy="274" r="5" fill="#1763a0"/><text x="74" y="281">PRIVACY</text><circle cx="54" cy="344" r="5" fill="#1e7a3c"/><text x="74" y="351">LOCALITY</text><circle cx="54" cy="414" r="5" fill="#3b3020"/><text x="74" y="421">COST</text></g>
+    <circle cx="0" cy="140" r="8" fill="#7a4e0a" stroke="#fbf3e0" stroke-width="3"/><circle cx="0" cy="275" r="8" fill="#1763a0" stroke="#fbf3e0" stroke-width="3"/><circle cx="0" cy="410" r="8" fill="#1e7a3c" stroke="#fbf3e0" stroke-width="3"/>
+    <circle cx="296" cy="140" r="8" fill="#7a4e0a" stroke="#fbf3e0" stroke-width="3"/><circle cx="296" cy="275" r="8" fill="#1763a0" stroke="#fbf3e0" stroke-width="3"/><circle cx="296" cy="410" r="8" fill="#1e7a3c" stroke="#fbf3e0" stroke-width="3"/>
+  </g>
+
+  <path d="M916 315H966Q996 315 996 275V265Q996 225 1036 225H1124" fill="none" stroke="#7a4e0a" stroke-width="5" marker-end="url(#arrow-orange)"/>
+  <path d="M916 450H1124" fill="none" stroke="#1763a0" stroke-width="5" marker-end="url(#arrow-cyan)"/>
+  <path d="M916 585H966Q996 585 996 625V635Q996 675 1036 675H1124" fill="none" stroke="#1e7a3c" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <g transform="translate(1124 150)"><rect class="node" width="330" height="150" rx="5"/><circle cx="0" cy="75" r="7" fill="#7a4e0a"/><text x="34" y="82" class="mono title">LOCAL</text><text x="34" y="113" class="mono small">Private + low latency</text></g>
+  <g transform="translate(1124 375)"><rect class="node" width="330" height="150" rx="5"/><circle cx="0" cy="75" r="7" fill="#1763a0"/><text x="34" y="82" class="mono title">PARTNER</text><text x="34" y="113" class="mono small">Specialized providers</text></g>
+  <g transform="translate(1124 600)"><rect class="node" width="330" height="150" rx="5"/><circle cx="0" cy="75" r="7" fill="#1e7a3c"/><text x="34" y="82" class="mono title">FRONTIER</text><text x="34" y="113" class="mono small">Highest capability</text></g>
+</svg>

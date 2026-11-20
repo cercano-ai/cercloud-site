@@ -8,12 +8,14 @@ test("builds a GitHub Pages artifact for the Cercloud project site", async () =>
   const html = await readFile(new URL("index.html", dist), "utf8");
 
   assert.match(html, /https:\/\/cercano-ai\.github\.io\/cercloud-site\//);
-  assert.match(html, /href="styles\.css"/);
+  assert.match(html, /href="styles\.css\?v=content-4"/);
   assert.match(html, /src="site\.js"/);
-  assert.match(html, /src="assets\/control-plane-day\.svg\?v=1"/);
-  assert.match(html, /data-night-src="assets\/control-plane-v2\.svg\?v=95bba31"/);
-  assert.match(html, /src="assets\/audit-visibility-day\.svg\?v=1"/);
-  assert.match(html, /data-night-src="assets\/audit-visibility-v2\.svg\?v=3"/);
+  assert.match(html, /src="assets\/control-plane-day\.svg\?v=no-grid"/);
+  assert.match(html, /data-night-src="assets\/control-plane-v2\.svg\?v=no-grid"/);
+  assert.match(html, /src="assets\/model-routing-day\.svg\?v=1"/);
+  assert.match(html, /data-night-src="assets\/model-routing-v2\.svg\?v=1"/);
+  assert.match(html, /src="assets\/audit-visibility-day\.svg\?v=no-grid"/);
+  assert.match(html, /data-night-src="assets\/audit-visibility-v2\.svg\?v=no-grid"/);
   assert.doesNotMatch(html, /(?:href|src)="\/[^/"]/);
   await access(new URL(".nojekyll", dist));
 });
@@ -27,6 +29,8 @@ test("includes every production asset and excludes development files", async () 
     "assets/audit-visibility.webp",
     "assets/audit-visibility-v2.svg",
     "assets/audit-visibility-day.svg",
+    "assets/model-routing-v2.svg",
+    "assets/model-routing-day.svg",
     "assets/favicon.svg",
     "assets/model-policy-960.webp",
     "assets/model-policy-1440.webp",

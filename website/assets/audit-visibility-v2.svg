@@ -2,9 +2,6 @@
   <title id="title">Cercloud identity, audit, and cost visibility</title>
   <desc id="desc">Identity, request context, and model route data flow through separate ports into an immutable audit ledger, producing showback, security, and compliance views.</desc>
   <defs>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
-    </pattern>
     <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="9"/>
     </filter>
@@ -25,7 +22,7 @@
   </defs>
 
   <rect width="1536" height="1024" fill="#111212"/>
-  <rect x="36" y="36" width="1464" height="952" fill="url(#grid)" stroke="#3c3d3c" stroke-width="2"/>
+  <rect x="36" y="36" width="1464" height="952" fill="none" stroke="#3c3d3c" stroke-width="2"/>
   <text x="82" y="92" class="mono label">ATTRIBUTION</text>
   <text x="636" y="92" class="mono label">IMMUTABLE LEDGER</text>
   <text x="1234" y="92" class="mono label">ACTIONABLE VIEWS</text>
